@@ -9,6 +9,7 @@
  \****************************************************************************/
 
 #include "System.h"
+#include <errno.h>
 
 /*
  *	Disk Save/Load functions
@@ -41,7 +42,6 @@ Module	"DiskIO";
 Version	"1.24";
 Author  "----*(A)";
 
-extern int errno;
 extern ITEM *ItemList;
 /*
  *	Items are saved by direct ordered dump, all text dumped is done

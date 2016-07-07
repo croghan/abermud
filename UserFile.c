@@ -8,6 +8,8 @@
  *									      *
  \****************************************************************************/
 
+#include <errno.h>
+
 /*
  *	User Control Files
  */
@@ -118,7 +120,6 @@ int FindRecord(FILE *f, int n)
 
 FILE *OpenUAF(void)
 {
-	extern int errno;
 	FILE *f;
 	if((f=fopen(USERFILE,"r+"))==NULL)
 	{
